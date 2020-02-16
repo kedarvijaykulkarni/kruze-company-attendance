@@ -1,5 +1,12 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
+{{!-- <WelcomePage /> --}}
+{{#sc-input
+  label="First name"
+  value=firstName
+  onChange=(action (mut firstName))
+}}
+  Caption Text
+{{/sc-input}}
 {{!-- Feel free to remove this! --}}
 
 {{outlet}}
